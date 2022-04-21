@@ -1,0 +1,120 @@
+@media screen and (min-width: 1440px) {
+  .container {
+    .card {
+      padding: 31px;
+      border-radius: 30px;
+      .card_star {
+        width: 50px;
+        height: 50px;
+        padding: 12px;
+        img {
+          width: 20px;
+        }
+      }
+      .card_title {
+        font-size: 1.8rem;
+      }
+      .card_desc {
+        font-size: 17px;
+        line-height: 1.8;
+      }
+      .card_rating_btns {
+        .rating_btn {
+          width: 50px;
+          height: 50px;
+          padding: 14px;
+          font-size: 1.5rem;
+        }
+      }
+
+      .card_submit_btn {
+        font-size: 19px;
+      }
+      .card_container-2 {
+        .thanks_img {
+          width: 100%;
+          img {
+            width: 175px;
+          }
+        }
+        .rating_count {
+          opacity: 95%;
+          font-size: 18px;
+          padding: 10px 15px;
+        }
+        .title {
+          font-weight: 700;
+          font-size: 2.2rem;
+        }
+        .desc {
+          font-size: 1.2rem;
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .container {
+    .card {
+      max-width: 34%;
+    }
+  }
+}
+@media screen and (max-width: 778px) {
+  .container {
+    .card {
+      max-width: 50%;
+    }
+  }
+}
+@media screen and (max-width: 555px) {
+  .container {
+    .card {
+      max-width: 66.5%;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .container {
+    .card {
+      max-width: 86.5%;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container {
+    .card {
+      width: 97%;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 210px) {
+  .container {
+    .card {
+      width: 98vw;
+      max-width: 100%;
+      height: 100vh;
+      .card_rating_btns {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+@media screen and (max-width: 140px) {
+  .container {
+    .card {
+      width: 100vw;
+      max-width: 100%;
+      height: 100vh;
+      .card_star {
+        display: none;
+      }
+    }
+  }
+}

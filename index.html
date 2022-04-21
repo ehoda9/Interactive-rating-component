@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./app/css/style.css">
+  <title>Interactive rating component</title>
+
+</head>
+
+<body>
+  <main class="container">
+
+    <div class="card">
+      <div class="card_container-1">
+        <div class="card_star">
+          <img src="./app/images/icon-star.svg" alt="star" class="star_img">
+        </div>
+        <h1 class="card_title">How did we do?</h1>
+        <p class="card_desc">Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</p>
+
+        <div class="card_rating_btns">
+          <div class="rating_btn" data-num="1">1</div>
+          <div class="rating_btn" data-num="2">2</div>
+          <div class="rating_btn" data-num="3">3</div>
+          <div class="rating_btn" data-num="4">4</div>
+          <div class="rating_btn" data-num="5">5</div>
+        </div>
+
+        <div class="card_submit_btn">Submit</div>
+      </div>
+
+      <div class="card_container-2 none">
+        <div class="thanks_img">
+          <img src="./app/images/illustration-thank-you.svg" alt="thanks" class="thank-you">
+        </div>
+
+        <div class="rating_count">
+          You selected <span class="rating_num"></span> out of 5
+        </div>
+        <h1 class="title">Thank you!</h1>
+        <p class="desc">We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!</p>
+    </div>
+   
+
+
+
+
+
+    </div>
+  </main>
+  <script src="./app/js/app.js"></script>
+</body>
+
+</html>

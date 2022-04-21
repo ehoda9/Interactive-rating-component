@@ -1,0 +1,316 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: #121417;
+}
+
+p {
+  font-size: 15px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card {
+  width: 86.5%;
+  max-width: 28.6%;
+  background-color: #252d37;
+  border-radius: 15px;
+  padding: 24px;
+}
+
+.container .card .card_star {
+  width: 39px;
+  height: 39px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(124, 135, 152, 0.18);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .card_star img {
+  width: 16px;
+}
+
+.container .card .card_title {
+  font-size: 1.464rem;
+  color: white;
+  margin-top: 18.9999991px;
+}
+
+.container .card .card_desc {
+  color: #959eac;
+  line-height: 1.56;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.container .card .card_rating_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 27px;
+  margin-bottom: 24px;
+}
+
+.container .card .card_rating_btns .rating_btn {
+  width: 41px;
+  height: 41px;
+  padding: 14px;
+  border-radius: 50%;
+  background-color: rgba(124, 135, 152, 0.18);
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  color: #959eac;
+}
+
+.container .card .card_rating_btns .active {
+  background-color: #959eac !important;
+  color: white;
+}
+
+.container .card .card_rating_btns .rating_btn:hover {
+  background-color: #fb7413;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
+  cursor: pointer;
+}
+
+.container .card .card_submit_btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 14px;
+  font-size: 13.5px;
+  background-color: #fb7413;
+  border-radius: 40px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.723);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-bottom: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .card .card_submit_btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #fb7413;
+}
+
+.container .card .card_container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.container .card .card_container-2 .thanks_img img {
+  width: 143px;
+  margin-top: 10px;
+}
+
+.container .card .card_container-2 .rating_count {
+  color: #fb7413;
+  opacity: 90%;
+  background-color: rgba(124, 135, 152, 0.18);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 9px;
+  font-size: 12.5px;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.9px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.container .card .card_container-2 .rating_count span {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.container .card .card_container-2 .title {
+  color: white;
+  font-weight: 400;
+  font-size: 1.54rem;
+  margin-bottom: 20px;
+}
+
+.container .card .card_container-2 .desc {
+  color: #959eac;
+  line-height: 1.6;
+}
+
+/* !! -> display [none] <- !! */
+.none {
+  display: none !important;
+}
+
+@media screen and (min-width: 1440px) {
+  .container .card {
+    padding: 31px;
+    border-radius: 30px;
+  }
+  .container .card .card_star {
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+  }
+  .container .card .card_star img {
+    width: 20px;
+  }
+  .container .card .card_title {
+    font-size: 1.8rem;
+  }
+  .container .card .card_desc {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+  .container .card .card_rating_btns .rating_btn {
+    width: 50px;
+    height: 50px;
+    padding: 14px;
+    font-size: 1.5rem;
+  }
+  .container .card .card_submit_btn {
+    font-size: 19px;
+  }
+  .container .card .card_container-2 .thanks_img {
+    width: 100%;
+  }
+  .container .card .card_container-2 .thanks_img img {
+    width: 175px;
+  }
+  .container .card .card_container-2 .rating_count {
+    opacity: 95%;
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+  .container .card .card_container-2 .title {
+    font-weight: 700;
+    font-size: 2.2rem;
+  }
+  .container .card .card_container-2 .desc {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .container .card {
+    max-width: 34%;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .container .card {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .container .card {
+    max-width: 66.5%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container .card {
+    max-width: 86.5%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container .card {
+    width: 97%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 210px) {
+  .container .card {
+    width: 98vw;
+    max-width: 100%;
+    height: 100vh;
+  }
+  .container .card .card_rating_btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 140px) {
+  .container .card {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+  }
+  .container .card .card_star {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
